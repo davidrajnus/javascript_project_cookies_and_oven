@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cookies and Oven</title>
+		<script type="text/javascript" src="cookie.js"></script>
+		<script type="text/javascript" src="timer.js"></script>
+		<script type="text/javascript" src="oven.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+
+	<body>
+		<h2>Cookies and Oven</h2>
+
+		<div class="instructions">
+			How to make delicious cookies:
+			<ol>
+				<li>Add cookie dough.</li>
+				<li>Start the oven.</li>
+				<li>Stop the oven when the time is up.</li>
+				<li>Enjoy!</li>
+			</ol>
+		</div>
+
+		<div class="col">
+			<h4>Let's start by putting some cookie dough onto the tray!</h4>
+			<button id='add-cookie' href="#">Click here to add a cookie!</button>
+			<p id='counter'>You have placed 0 cookie dough onto the tray.</p>
+			<div id='tray'></div>
+		</div>
+
+
+	  <div class="col">
+			<p id='oven-notice'></p>
+
+			<div id="bottom">
+				&nbsp;Your Oven
+				<div class="knob"></div>
+				<div class="knob"></div>
+			</div>
+			<div id="oven">
+				<div id="small-rectangle">
+					<div id='timer'></div>
+				</div>
+			</div>
+
+			<p id="cookie-status"></p>
+			<h4>Press "Start" to start baking and "Stop" to stop baking!</h4>
+			<button type="button" id="start-btn">Start</button>
+			<button type="button" id="stop-btn">Stop</button>
+
+			<div id='final-tray-container'></div>
+			<p id='final-statement'></p>
+	  </div>
+	</body>
+</html>
